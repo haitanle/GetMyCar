@@ -1,8 +1,7 @@
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers.withId
-import androidx.test.espresso.matcher.ViewMatchers.withText
+import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.rule.ActivityTestRule
 import androidx.test.runner.AndroidJUnit4
 import com.example.getmycar.MainActivity
@@ -19,6 +18,11 @@ class MainActivityTest{
 
     @Test
     fun startActivity(){
-        onView(withId(R.id.textView)).check(matches(withText("Hello World!")))
+        onView(withId(R.id.button_car_type)).check(matches(withText("Truck")))
+    }
+
+    @Test
+    fun recylerViewIsDisplayed(){
+        onView(withId(R.id.rv_car_types)).check(matches(isDisplayed()))
     }
 }
