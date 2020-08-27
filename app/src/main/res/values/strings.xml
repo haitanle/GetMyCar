@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">GetMyCar</string>
+    <string name="truck">Truck</string>
+    <string name="sedan">Sedan</string>
+    <string name="sport_car">Sport Car</string>
+    <string name="motorcycle">Motorcycle</string>
+    <string name="boat">Boat</string>
+    <string name="wagon">Wagon</string>
+    <string name="super_car">Super car</string>
+    <string name="van">Van</string>
+    <string name="car_type_label">Type</string>
+    <string name="car_make_label">Make</string>
+    <string name="car_model_label">Model</string>
+    <string name="car_year_label">Year</string>
+    <string name="button_submit_label">Submit</string>
 </resources>
